@@ -1,0 +1,22 @@
+<h3 class="docs-header-link docs-markdown-h3">Signup</h3>
+
+<form class="example-form">
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Name" value="">
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Email" value="">
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Password" type="password" value="">
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Books you have read" #book value="" (keyup.enter)="addBook(book.value)">
+  </md-form-field>
+  <md-chip-list>
+    <md-chip *ngFor="let chip of bookChips; let i = index" [attr.data-index]="i">{{chip}}
+      <md-icon (click)="removeChip(i)">delete forever</md-icon>
+    </md-chip>
+  </md-chip-list>  
+  <button md-raised-button color="primary" class="btnRadius">Sign up</button>
+</form>

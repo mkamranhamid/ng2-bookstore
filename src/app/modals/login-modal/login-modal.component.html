@@ -1,0 +1,23 @@
+<div style="text-align: center;">
+  <h3 class="docs-header-link docs-markdown-h3" style="display: inline;">Login</h3>
+  <button md-button md-dialog-close style="display: inline; float: right;line-height: 20px;min-width: 55px;"><md-icon md-dialog-close = true>close</md-icon></button>
+</div>
+<hr>
+<md-dialog-content>
+  <form class="example-form">
+    <md-form-field class="example-full-width">
+      <input mdInput placeholder="Enail" value="">
+    </md-form-field>
+    <md-form-field class="example-full-width">
+      <input mdInput placeholder="Password" value="">
+    </md-form-field>
+    <md-checkbox color="primary">Remember me</md-checkbox> <a class="forgetLink" (click)="routeToSomewhere('forget')">Forget Password</a>
+    <div class="centringBtn btnHeight">
+      <button md-raised-button color="primary" type="submit" class="btnRadius">Log in</button>
+    </div>
+  </form>
+</md-dialog-content>
+<hr>
+<div class="text-center">
+  <p>Don't have an account? <a class="forgetLink" (click)="routeToSomewhere('signup')"> Sign up »</a></p>
+</div>

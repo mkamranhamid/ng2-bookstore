@@ -1,0 +1,28 @@
+<!-- before login -->
+<md-toolbar color="primary">
+  <a routerLink="/" style="text-decoration: none;color: #e2e3f3;"><md-icon>home</md-icon>Book Store</a>
+  <div class="navbarWidth">
+    <button class="navbarRightContent" md-button (click)="openDialog()">Log in</button>
+    <button class="navbarRightContent" md-button routerLink="/signup">Sign up</button>
+  </div>
+</md-toolbar>
+<!-- after login -->
+<!-- <md-toolbar color="primary">
+  <div class="leftNavContent">
+    <a routerLink="/timeline" style="text-decoration: none;color: #e2e3f3;">
+      <md-icon>home</md-icon>
+    </a>
+    <a routerLink="/" style="text-decoration: none;color: #e2e3f3;">
+      <md-icon>notifications_none</md-icon>
+    </a>
+    <a routerLink="/" style="text-decoration: none;color: #e2e3f3;">
+      <md-icon>mail_outline</md-icon>
+    </a>
+  </div>
+  <div class="navbarWidth">
+    <button class="navbarRightContent" md-button routerLink="/add"><md-icon>add</md-icon>Add Book</button>
+  </div>
+</md-toolbar> -->
+<div>
+  <router-outlet></router-outlet>
+</div>
